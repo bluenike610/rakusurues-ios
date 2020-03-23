@@ -26,10 +26,4 @@ target 'CountMemoForEsApp' do
 
   # Pods for CountMemoForEsApp
 
-
-  target 'CountMemoForEsAppTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end

@@ -28,7 +28,12 @@ class Config {
     "Type4",
     "Type5"]
     
-
+    static let TodoColors = ["DFF3FD",
+    "FFB4B0",
+    "FFE3AE",
+    "CBE8BA",
+    "A8C6FA"]
+    
     static let YES = "はい"
     static let NO = "いいえ"
     static let CANCEL = "キャンセル"
@@ -39,7 +44,7 @@ class Config {
     static let BACK = UIColor(red: 137/255, green: 193/255, blue: 180/255, alpha: 1.0)
     static let GRAY = UIColor(red: 112/255, green: 111/255, blue: 111/255, alpha: 1.0)
     static let BLACK = UIColor(red: 29/255, green: 29/255, blue: 27/255, alpha: 1.0)
-    static let BUBBLE = UIColor(red: 203/255, green: 187/255, blue: 159/255, alpha: 1.0)
+    static let BUBBLE = UIColor(red: 135/255, green: 204/255, blue: 196/255, alpha: 1.0)
 
     //UIConfig
     

@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		342B0EDF2428510D00E607A9 /* XLPagerTabStrip.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 342B0EDC2428510500E607A9 /* XLPagerTabStrip.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		342B0EE02428511D00E607A9 /* XLPagerTabStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342B0EDC2428510500E607A9 /* XLPagerTabStrip.framework */; };
+		342B0F05242854CD00E607A9 /* TodoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342B0F04242854CD00E607A9 /* TodoListTableViewController.swift */; };
+		342B0F07242854E800E607A9 /* CompletedTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342B0F06242854E800E607A9 /* CompletedTaskTableViewController.swift */; };
+		342B0F0B24285B9300E607A9 /* UIColor_HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342B0F0A24285B9300E607A9 /* UIColor_HexString.swift */; };
+		342B0F1024285D4800E607A9 /* TodoItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342B0F0E24285D4800E607A9 /* TodoItemTableViewCell.swift */; };
+		342B0F1124285D4800E607A9 /* TodoItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 342B0F0F24285D4800E607A9 /* TodoItemTableViewCell.xib */; };
+		34441AB22428918F00CD4138 /* AddTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34441AB02428918F00CD4138 /* AddTodoViewController.swift */; };
+		34441AB32428918F00CD4138 /* AddTodoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34441AB12428918F00CD4138 /* AddTodoViewController.xib */; };
+		34441AF42429164A00CD4138 /* WWCalendarTimeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34441AEC2429164A00CD4138 /* WWCalendarTimeSelector.swift */; };
+		34441AF52429164A00CD4138 /* String+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34441AED2429164A00CD4138 /* String+Timepiece.swift */; };
+		34441AF62429164A00CD4138 /* WWCalendarTimeSelector.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34441AEE2429164A00CD4138 /* WWCalendarTimeSelector.storyboard */; };
+		34441AF72429164A00CD4138 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34441AEF2429164A00CD4138 /* Duration.swift */; };
+		34441AF82429164A00CD4138 /* NSCalendar+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34441AF02429164A00CD4138 /* NSCalendar+Timepiece.swift */; };
+		34441AF92429164A00CD4138 /* NSDate+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34441AF12429164A00CD4138 /* NSDate+Timepiece.swift */; };
+		34441AFA2429164A00CD4138 /* NSDateComponents+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34441AF22429164A00CD4138 /* NSDateComponents+Timepiece.swift */; };
+		34441AFB2429164A00CD4138 /* Int+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34441AF32429164A00CD4138 /* Int+Timepiece.swift */; };
 		349C30F524259B2E00DCA499 /* MemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349C30F424259B2E00DCA499 /* MemoListViewController.swift */; };
 		349C30F824259EF500DCA499 /* MemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349C30F624259EF500DCA499 /* MemoCollectionViewCell.swift */; };
 		349C30F924259EF500DCA499 /* MemoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 349C30F724259EF500DCA499 /* MemoCollectionViewCell.xib */; };
@@ -55,32 +72,67 @@
 		814D3BC6220ECA730099AC00 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 814D3BC5220ECA730099AC00 /* search@2x.png */; };
 		814D3BC8220ECA7E0099AC00 /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 814D3BC7220ECA7E0099AC00 /* setting@2x.png */; };
 		814D3BCA220ECA950099AC00 /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 814D3BC9220ECA950099AC00 /* home@2x.png */; };
-		814D3BD1221035E20099AC00 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D3BD0221035E20099AC00 /* SearchTableViewController.swift */; };
 		8161393021FDD2EE00A24398 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8161392F21FDD2EE00A24398 /* AppDelegate.swift */; };
 		8161393521FDD2EE00A24398 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8161393321FDD2EE00A24398 /* Main.storyboard */; };
 		8161393821FDD2EE00A24398 /* CountMemoForEsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8161393621FDD2EE00A24398 /* CountMemoForEsApp.xcdatamodeld */; };
 		8161393A21FDD2EF00A24398 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8161393921FDD2EF00A24398 /* Assets.xcassets */; };
 		8161393D21FDD2EF00A24398 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8161393B21FDD2EF00A24398 /* LaunchScreen.storyboard */; };
-		8161394821FDD2EF00A24398 /* CountMemoForEsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8161394721FDD2EF00A24398 /* CountMemoForEsAppTests.swift */; };
 		B1B7194522215FA000ED12B0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B1B7194422215FA000ED12B0 /* README.md */; };
-		C2F50E1A616D64F08EB457D1 /* Pods_CountMemoForEsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E8489B7AABF2FE1A5A2911 /* Pods_CountMemoForEsAppTests.framework */; };
 		FB3A866E140DF461F043318D /* Pods_CountMemoForEsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE61F8B640F62FBDB2F1AD1 /* Pods_CountMemoForEsApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8161394421FDD2EF00A24398 /* PBXContainerItemProxy */ = {
+		342B0EDB2428510500E607A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8161392421FDD2EE00A24398 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8161392B21FDD2EE00A24398;
-			remoteInfo = CountMemoForEsApp;
+			containerPortal = 342B0ED62428510500E607A9 /* XLPagerTabStrip.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 28F8287D1C494B2C00330CF4;
+			remoteInfo = XLPagerTabStrip;
+		};
+		342B0EDD2428510500E607A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 342B0ED62428510500E607A9 /* XLPagerTabStrip.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 28F828871C494B2C00330CF4;
+			remoteInfo = XLPagerTabStripTests;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		34A9C4872428465600FC29AF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				342B0EDF2428510D00E607A9 /* XLPagerTabStrip.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0BE61F8B640F62FBDB2F1AD1 /* Pods_CountMemoForEsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountMemoForEsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D06EE107FDE1EB131EA7841 /* Pods-CountMemoForEsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountMemoForEsAppTests.debug.xcconfig"; path = "Target Support Files/Pods-CountMemoForEsAppTests/Pods-CountMemoForEsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		304A0313011A4AD6B4FE6780 /* Pods-CountMemoForEsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountMemoForEsAppTests.release.xcconfig"; path = "Target Support Files/Pods-CountMemoForEsAppTests/Pods-CountMemoForEsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		342B04BB24284A5B00E607A9 /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XLPagerTabStrip.framework; path = "../SampleApplicatinX-master/XLPagerTabStrip.framework"; sourceTree = "<group>"; };
+		342B0ED62428510500E607A9 /* XLPagerTabStrip.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = XLPagerTabStrip.xcodeproj; sourceTree = "<group>"; };
+		342B0F04242854CD00E607A9 /* TodoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListTableViewController.swift; sourceTree = "<group>"; };
+		342B0F06242854E800E607A9 /* CompletedTaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTaskTableViewController.swift; sourceTree = "<group>"; };
+		342B0F0A24285B9300E607A9 /* UIColor_HexString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor_HexString.swift; sourceTree = "<group>"; };
+		342B0F0E24285D4800E607A9 /* TodoItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemTableViewCell.swift; sourceTree = "<group>"; };
+		342B0F0F24285D4800E607A9 /* TodoItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoItemTableViewCell.xib; sourceTree = "<group>"; };
+		34441AB02428918F00CD4138 /* AddTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoViewController.swift; sourceTree = "<group>"; };
+		34441AB12428918F00CD4138 /* AddTodoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTodoViewController.xib; sourceTree = "<group>"; };
+		34441AEC2429164A00CD4138 /* WWCalendarTimeSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WWCalendarTimeSelector.swift; sourceTree = "<group>"; };
+		34441AED2429164A00CD4138 /* String+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Timepiece.swift"; sourceTree = "<group>"; };
+		34441AEE2429164A00CD4138 /* WWCalendarTimeSelector.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WWCalendarTimeSelector.storyboard; sourceTree = "<group>"; };
+		34441AEF2429164A00CD4138 /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
+		34441AF02429164A00CD4138 /* NSCalendar+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCalendar+Timepiece.swift"; sourceTree = "<group>"; };
+		34441AF12429164A00CD4138 /* NSDate+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Timepiece.swift"; sourceTree = "<group>"; };
+		34441AF22429164A00CD4138 /* NSDateComponents+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDateComponents+Timepiece.swift"; sourceTree = "<group>"; };
+		34441AF32429164A00CD4138 /* Int+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Timepiece.swift"; sourceTree = "<group>"; };
 		349C30F424259B2E00DCA499 /* MemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewController.swift; sourceTree = "<group>"; };
 		349C30F624259EF500DCA499 /* MemoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCollectionViewCell.swift; sourceTree = "<group>"; };
 		349C30F724259EF500DCA499 /* MemoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemoCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -130,7 +182,6 @@
 		814D3BC5220ECA730099AC00 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
 		814D3BC7220ECA7E0099AC00 /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting@2x.png"; sourceTree = "<group>"; };
 		814D3BC9220ECA950099AC00 /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
-		814D3BD0221035E20099AC00 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		8161392C21FDD2EE00A24398 /* CountMemoForEsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountMemoForEsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8161392F21FDD2EE00A24398 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8161393421FDD2EE00A24398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -138,12 +189,10 @@
 		8161393921FDD2EF00A24398 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8161393C21FDD2EF00A24398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8161393E21FDD2EF00A24398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8161394321FDD2EF00A24398 /* CountMemoForEsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountMemoForEsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8161394721FDD2EF00A24398 /* CountMemoForEsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountMemoForEsAppTests.swift; sourceTree = "<group>"; };
 		8161394921FDD2EF00A24398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A46EF802300F8041FFB0588 /* Pods-CountMemoForEsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountMemoForEsApp.release.xcconfig"; path = "Target Support Files/Pods-CountMemoForEsApp/Pods-CountMemoForEsApp.release.xcconfig"; sourceTree = "<group>"; };
 		B1B7194422215FA000ED12B0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B5E8489B7AABF2FE1A5A2911 /* Pods_CountMemoForEsAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountMemoForEsAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,15 +200,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				342B0EE02428511D00E607A9 /* XLPagerTabStrip.framework in Frameworks */,
 				FB3A866E140DF461F043318D /* Pods_CountMemoForEsApp.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8161394021FDD2EF00A24398 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C2F50E1A616D64F08EB457D1 /* Pods_CountMemoForEsAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +217,30 @@
 				304A0313011A4AD6B4FE6780 /* Pods-CountMemoForEsAppTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		342B0ED72428510500E607A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				342B0EDC2428510500E607A9 /* XLPagerTabStrip.framework */,
+				342B0EDE2428510500E607A9 /* XLPagerTabStripTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34441AB62429095F00CD4138 /* CustomCalendarSelecter */ = {
+			isa = PBXGroup;
+			children = (
+				34441AEF2429164A00CD4138 /* Duration.swift */,
+				34441AF32429164A00CD4138 /* Int+Timepiece.swift */,
+				34441AF02429164A00CD4138 /* NSCalendar+Timepiece.swift */,
+				34441AF12429164A00CD4138 /* NSDate+Timepiece.swift */,
+				34441AF22429164A00CD4138 /* NSDateComponents+Timepiece.swift */,
+				34441AED2429164A00CD4138 /* String+Timepiece.swift */,
+				34441AEE2429164A00CD4138 /* WWCalendarTimeSelector.storyboard */,
+				34441AEC2429164A00CD4138 /* WWCalendarTimeSelector.swift */,
+			);
+			path = CustomCalendarSelecter;
 			sourceTree = "<group>";
 		};
 		34A12F4A2425060C00C15925 /* Config */ = {
@@ -251,6 +317,7 @@
 		34A12F602425060C00C15925 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				34441AB62429095F00CD4138 /* CustomCalendarSelecter */,
 				34A12F612425060C00C15925 /* ImageViewWithBorder.swift */,
 				34A12F622425060C00C15925 /* BaseViewController.swift */,
 				34A12F632425060C00C15925 /* ScaledButton.swift */,
@@ -263,6 +330,7 @@
 				34A12F6A2425060C00C15925 /* ScaledALabel.swift */,
 				34A12F6B2425060C00C15925 /* MultiPickerDialog.swift */,
 				34A12F6C2425060C00C15925 /* ScaledTextView.swift */,
+				342B0F0A24285B9300E607A9 /* UIColor_HexString.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -294,6 +362,12 @@
 			isa = PBXGroup;
 			children = (
 				34A47E5D242743E400E317A9 /* TodoViewController.swift */,
+				342B0F04242854CD00E607A9 /* TodoListTableViewController.swift */,
+				342B0F06242854E800E607A9 /* CompletedTaskTableViewController.swift */,
+				342B0F0E24285D4800E607A9 /* TodoItemTableViewCell.swift */,
+				342B0F0F24285D4800E607A9 /* TodoItemTableViewCell.xib */,
+				34441AB02428918F00CD4138 /* AddTodoViewController.swift */,
+				34441AB12428918F00CD4138 /* AddTodoViewController.xib */,
 			);
 			path = 2_Todo;
 			sourceTree = "<group>";
@@ -324,8 +398,8 @@
 		34C2BDC431CFE49E769E838D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				342B04BB24284A5B00E607A9 /* XLPagerTabStrip.framework */,
 				0BE61F8B640F62FBDB2F1AD1 /* Pods_CountMemoForEsApp.framework */,
-				B5E8489B7AABF2FE1A5A2911 /* Pods_CountMemoForEsAppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -358,6 +432,7 @@
 		8161392321FDD2EE00A24398 = {
 			isa = PBXGroup;
 			children = (
+				342B0ED62428510500E607A9 /* XLPagerTabStrip.xcodeproj */,
 				B1B7194422215FA000ED12B0 /* README.md */,
 				8161392E21FDD2EE00A24398 /* CountMemoForEsApp */,
 				8161394621FDD2EF00A24398 /* CountMemoForEsAppTests */,
@@ -371,7 +446,6 @@
 			isa = PBXGroup;
 			children = (
 				8161392C21FDD2EE00A24398 /* CountMemoForEsApp.app */,
-				8161394321FDD2EF00A24398 /* CountMemoForEsAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -388,7 +462,6 @@
 				814D3BBC220EADDA0099AC00 /* images */,
 				8161392F21FDD2EE00A24398 /* AppDelegate.swift */,
 				8161393321FDD2EE00A24398 /* Main.storyboard */,
-				814D3BD0221035E20099AC00 /* SearchTableViewController.swift */,
 				8161393921FDD2EF00A24398 /* Assets.xcassets */,
 				8161393B21FDD2EF00A24398 /* LaunchScreen.storyboard */,
 				8161393E21FDD2EF00A24398 /* Info.plist */,
@@ -418,6 +491,7 @@
 				8161392921FDD2EE00A24398 /* Frameworks */,
 				8161392A21FDD2EE00A24398 /* Resources */,
 				44DEE934521E879E5B92E3AD /* [CP] Embed Pods Frameworks */,
+				34A9C4872428465600FC29AF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -427,25 +501,6 @@
 			productName = CountMemoForEsApp;
 			productReference = 8161392C21FDD2EE00A24398 /* CountMemoForEsApp.app */;
 			productType = "com.apple.product-type.application";
-		};
-		8161394221FDD2EF00A24398 /* CountMemoForEsAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8161394F21FDD2EF00A24398 /* Build configuration list for PBXNativeTarget "CountMemoForEsAppTests" */;
-			buildPhases = (
-				D1E1B8E486A47D571C4A0F52 /* [CP] Check Pods Manifest.lock */,
-				8161393F21FDD2EF00A24398 /* Sources */,
-				8161394021FDD2EF00A24398 /* Frameworks */,
-				8161394121FDD2EF00A24398 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8161394521FDD2EF00A24398 /* PBXTargetDependency */,
-			);
-			name = CountMemoForEsAppTests;
-			productName = CountMemoForEsAppTests;
-			productReference = 8161394321FDD2EF00A24398 /* CountMemoForEsAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -460,10 +515,6 @@
 					8161392B21FDD2EE00A24398 = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					8161394221FDD2EF00A24398 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 8161392B21FDD2EE00A24398;
-					};
 				};
 			};
 			buildConfigurationList = 8161392721FDD2EE00A24398 /* Build configuration list for PBXProject "CountMemoForEsApp" */;
@@ -473,17 +524,40 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 8161392321FDD2EE00A24398;
 			productRefGroup = 8161392D21FDD2EE00A24398 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 342B0ED72428510500E607A9 /* Products */;
+					ProjectRef = 342B0ED62428510500E607A9 /* XLPagerTabStrip.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8161392B21FDD2EE00A24398 /* CountMemoForEsApp */,
-				8161394221FDD2EF00A24398 /* CountMemoForEsAppTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		342B0EDC2428510500E607A9 /* XLPagerTabStrip.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XLPagerTabStrip.framework;
+			remoteRef = 342B0EDB2428510500E607A9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		342B0EDE2428510500E607A9 /* XLPagerTabStripTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = XLPagerTabStripTests.xctest;
+			remoteRef = 342B0EDD2428510500E607A9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8161392A21FDD2EE00A24398 /* Resources */ = {
@@ -496,21 +570,17 @@
 				B1B7194522215FA000ED12B0 /* README.md in Resources */,
 				8161393A21FDD2EF00A24398 /* Assets.xcassets in Resources */,
 				349C30F924259EF500DCA499 /* MemoCollectionViewCell.xib in Resources */,
+				34441AF62429164A00CD4138 /* WWCalendarTimeSelector.storyboard in Resources */,
 				814D3BC2220ECA5B0099AC00 /* navbar-edit@2x.png in Resources */,
 				814D3BC6220ECA730099AC00 /* search@2x.png in Resources */,
+				34441AB32428918F00CD4138 /* AddTodoViewController.xib in Resources */,
 				814D3BBE220EAE2B0099AC00 /* レイヤー 1.png in Resources */,
 				814D3BC4220ECA690099AC00 /* note@2x.png in Resources */,
 				8161393521FDD2EE00A24398 /* Main.storyboard in Resources */,
+				342B0F1124285D4800E607A9 /* TodoItemTableViewCell.xib in Resources */,
 				34A12F7A2425060C00C15925 /* TopViewController.xib in Resources */,
 				349C31012425FB6100DCA499 /* MemoViewController.xib in Resources */,
 				814D3BCA220ECA950099AC00 /* home@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8161394121FDD2EF00A24398 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,28 +626,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CountMemoForEsApp/Pods-CountMemoForEsApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D1E1B8E486A47D571C4A0F52 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CountMemoForEsAppTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -588,8 +636,10 @@
 				34A47E64242748B900E317A9 /* LocalNotificationManager.swift in Sources */,
 				34A12F842425060C00C15925 /* BottomLineView.swift in Sources */,
 				34A12F862425060C00C15925 /* ProductManager.swift in Sources */,
+				34441AF52429164A00CD4138 /* String+Timepiece.swift in Sources */,
 				34A12F852425060C00C15925 /* MySwitch.swift in Sources */,
 				34A12F9B2425094300C15925 /* LoginViewController.swift in Sources */,
+				34441AF92429164A00CD4138 /* NSDate+Timepiece.swift in Sources */,
 				34A47E602427443400E317A9 /* CalendarViewController.swift in Sources */,
 				34A12F8C2425066900C15925 /* MemoNavViewController.swift in Sources */,
 				34A12F822425060C00C15925 /* ScaleTextField.swift in Sources */,
@@ -599,53 +649,46 @@
 				34C7687024269FB5003C5E38 /* AccountViewController.swift in Sources */,
 				349C30F524259B2E00DCA499 /* MemoListViewController.swift in Sources */,
 				34A12F782425060C00C15925 /* MyTabBar.swift in Sources */,
+				34441AF72429164A00CD4138 /* Duration.swift in Sources */,
+				34441AFB2429164A00CD4138 /* Int+Timepiece.swift in Sources */,
 				34A12F792425060C00C15925 /* TopViewController.swift in Sources */,
 				34A12F872425060C00C15925 /* ScaledALabel.swift in Sources */,
 				34A12F6F2425060C00C15925 /* Config.swift in Sources */,
 				34A12F992425091000C15925 /* RegisterViewController.swift in Sources */,
 				8161393021FDD2EE00A24398 /* AppDelegate.swift in Sources */,
+				34441AFA2429164A00CD4138 /* NSDateComponents+Timepiece.swift in Sources */,
 				34A12F832425060C00C15925 /* BackButtonViewController.swift in Sources */,
+				342B0F1024285D4800E607A9 /* TodoItemTableViewCell.swift in Sources */,
 				34A12F802425060C00C15925 /* ScaledButton.swift in Sources */,
 				34A12F7F2425060C00C15925 /* BaseViewController.swift in Sources */,
 				34A12F90242506B400C15925 /* CalendarNavViewController.swift in Sources */,
 				349C30F824259EF500DCA499 /* MemoCollectionViewCell.swift in Sources */,
 				349C30FB2425A23500DCA499 /* MemoModel.swift in Sources */,
 				34A12F812425060C00C15925 /* ScaledLabel.swift in Sources */,
+				342B0F0B24285B9300E607A9 /* UIColor_HexString.swift in Sources */,
 				349C31042426703400DCA499 /* MemoHeaderCollectionReusableView.swift in Sources */,
 				8161393821FDD2EE00A24398 /* CountMemoForEsApp.xcdatamodeld in Sources */,
+				34441AF82429164A00CD4138 /* NSCalendar+Timepiece.swift in Sources */,
 				34A12F712425060C00C15925 /* NotifyNavViewController.swift in Sources */,
+				342B0F05242854CD00E607A9 /* TodoListTableViewController.swift in Sources */,
 				34A12F7D2425060C00C15925 /* Common.swift in Sources */,
 				34A12F92242506C600C15925 /* AccountNavViewController.swift in Sources */,
 				34A12F7E2425060C00C15925 /* ImageViewWithBorder.swift in Sources */,
 				349C31002425FB6100DCA499 /* MemoViewController.swift in Sources */,
 				34A12F892425060C00C15925 /* ScaledTextView.swift in Sources */,
+				34441AF42429164A00CD4138 /* WWCalendarTimeSelector.swift in Sources */,
+				342B0F07242854E800E607A9 /* CompletedTaskTableViewController.swift in Sources */,
 				34A12F882425060C00C15925 /* MultiPickerDialog.swift in Sources */,
 				814D3BC0220EB0170099AC00 /* MemoTabBarController.swift in Sources */,
 				34A12F7C2425060C00C15925 /* LocalstorageManager.swift in Sources */,
-				814D3BD1221035E20099AC00 /* SearchTableViewController.swift in Sources */,
 				34A12F702425060C00C15925 /* UserModel.swift in Sources */,
 				349C30FD2425A5E700DCA499 /* DatabaseManager.swift in Sources */,
+				34441AB22428918F00CD4138 /* AddTodoViewController.swift in Sources */,
 				34A12F8E242506A300C15925 /* TodoNavViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8161393F21FDD2EF00A24398 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8161394821FDD2EF00A24398 /* CountMemoForEsAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8161394521FDD2EF00A24398 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8161392B21FDD2EE00A24398 /* CountMemoForEsApp */;
-			targetProxy = 8161394421FDD2EF00A24398 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8161393321FDD2EE00A24398 /* Main.storyboard */ = {
@@ -788,6 +831,7 @@
 			baseConfigurationReference = 5B8F4FB2C3E8D633829006D1 /* Pods-CountMemoForEsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KBS7R434AZ;
 				INFOPLIST_FILE = CountMemoForEsApp/Info.plist;
@@ -797,6 +841,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yokolilybelly.memoSHEEEt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -807,6 +852,7 @@
 			baseConfigurationReference = 9A46EF802300F8041FFB0588 /* Pods-CountMemoForEsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KBS7R434AZ;
 				INFOPLIST_FILE = CountMemoForEsApp/Info.plist;
@@ -816,52 +862,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yokolilybelly.memoSHEEEt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		8161395021FDD2EF00A24398 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D06EE107FDE1EB131EA7841 /* Pods-CountMemoForEsAppTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KBS7R434AZ;
-				INFOPLIST_FILE = CountMemoForEsAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yokolilybelly.CountMemoForEsAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CountMemoForEsApp.app/CountMemoForEsApp";
-			};
-			name = Debug;
-		};
-		8161395121FDD2EF00A24398 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 304A0313011A4AD6B4FE6780 /* Pods-CountMemoForEsAppTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KBS7R434AZ;
-				INFOPLIST_FILE = CountMemoForEsAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yokolilybelly.CountMemoForEsAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CountMemoForEsApp.app/CountMemoForEsApp";
 			};
 			name = Release;
 		};
@@ -882,15 +885,6 @@
 			buildConfigurations = (
 				8161394D21FDD2EF00A24398 /* Debug */,
 				8161394E21FDD2EF00A24398 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8161394F21FDD2EF00A24398 /* Build configuration list for PBXNativeTarget "CountMemoForEsAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8161395021FDD2EF00A24398 /* Debug */,
-				8161395121FDD2EF00A24398 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

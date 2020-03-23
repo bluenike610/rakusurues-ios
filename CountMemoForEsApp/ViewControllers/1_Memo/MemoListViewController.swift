@@ -171,7 +171,7 @@ class MemoListViewController: UIViewController
         case UICollectionView.elementKindSectionHeader:
             let reusableview = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "MemoHeaderCollectionReusableView", for: indexPath) as! MemoHeaderCollectionReusableView
 
-            reusableview.initData(markNum: "\(indexPath.section+1)", groupTitle: (self.groupKeyList[indexPath.section] as! String))
+            reusableview.initData(markNum: indexPath.section+1, groupTitle: (self.groupKeyList[indexPath.section] as! String))
             return reusableview
         default:  fatalError("Unexpected element kind")
         }
@@ -192,8 +192,9 @@ class MemoListViewController: UIViewController
             // ボタンが押された時の処理を書く（クロージャ実装）
             (action: UIAlertAction!) -> Void in
             for i in 0 ..< self.deleteMemoList.count {
-                DatabaseManager.persistentContainer.viewContext.delete(self.deleteMemoList.object(at: i) as! Memo)
-                LocalNotificationManager.removeNotification(data: self.deleteMemoList.object(at: i) as! Memo)
+               let memo = self.deleteMemoList.object(at: i) as! Memo
+                DatabaseManager.persistentContainer.viewContext.delete(memo)
+                LocalNotificationManager.removeNotification(id: memo.company!+memo.title!)
             }
             self.editable = false
             self.editBtn.setTitle("編集", for: .normal)
@@ -208,7 +209,6 @@ class MemoListViewController: UIViewController
             self.editBtn.setTitle("編集", for: .normal)
             self.editBtn.setTitleColor(.systemBlue, for: .normal)
             self.deleteMemoList.removeAllObjects()
-            self.groupKeyList.removeAllObjects()
         })
         alert.addAction(cancelAction)
         alert.addAction(defaultAction)
@@ -230,7 +230,6 @@ class MemoListViewController: UIViewController
             self.editBtn.setTitleColor(.red, for: .normal)
             editable = !editable
             deleteMemoList.removeAllObjects()
-            self.groupKeyList.removeAllObjects()
             self.collectionView.reloadData()
         }else {
             if self.deleteMemoList.count > 0 {

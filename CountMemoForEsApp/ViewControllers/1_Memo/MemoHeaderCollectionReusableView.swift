@@ -20,14 +20,15 @@ class MemoHeaderCollectionReusableView: UICollectionReusableView {
         super.awakeFromNib()
         // Initialization code
         mainBg.layer.cornerRadius = 15
-        markBg.layer.cornerRadius = 15
+        markBg.layer.cornerRadius = 14
+        mainBg.layer.borderColor = UIColor.gray.cgColor
+        mainBg.layer.borderWidth = 0.5
     }
     
-    internal func initData(markNum: String, groupTitle: String) {
-        markLb.text = markNum
+    internal func initData(markNum: Int, groupTitle: String) {
+        markLb.text = String(markNum)
         titleLb.text = groupTitle
-        markBg.backgroundColor = Common.getRandomColor()
-        mainBg.backgroundColor = Common.getRandomColor()
+        markBg.backgroundColor = Common.getRandomColor(value: markNum-1)
     }
     
 }

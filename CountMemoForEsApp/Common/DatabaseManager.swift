@@ -53,7 +53,10 @@ class DatabaseManager: NSObject {
                     NSPredicate(format: "%K CONTAINS %@", "title","\(keyword)"),
                     ])
             fetchRequest.predicate = predicate
-            
+            fetchRequest.sortDescriptors = [
+                NSSortDescriptor(key: "createdAt", ascending: true)
+            ]
+
             let fetchData = try! context.fetch(fetchRequest)
 
             if(!fetchData.isEmpty){
@@ -80,6 +83,37 @@ class DatabaseManager: NSObject {
         }
 
         return searchData;
+    }
+    
+    static func getTodoDatas(completed: Bool) -> [Todo] {
+        var searchData:[Todo] = []
+        let context = persistentContainer.viewContext
+        //%@はstring型を表す
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Todo")
+        //複数条件かつ部分一致でじ検索
+        let predicate = NSCompoundPredicate(type: NSCompoundPredicate.LogicalType.or
+            , subpredicates: [
+                NSPredicate(format: "completedFlag == %@", NSNumber(value: completed))
+                ])
+        fetchRequest.predicate = predicate
+        fetchRequest.sortDescriptors = [
+            NSSortDescriptor(key: "createdAt", ascending: true)
+        ]
+
+        let fetchData = try! context.fetch(fetchRequest)
+
+        if(!fetchData.isEmpty){
+            for i in 0..<fetchData.count{
+                searchData.append(fetchData[i] as! Todo)
+            }
+            do{
+                try context.save()
+            }catch{
+                print(error)
+            }
+        }
+
+        return searchData
     }
 
 }
