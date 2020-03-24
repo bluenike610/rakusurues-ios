@@ -115,5 +115,5 @@ class DatabaseManager: NSObject {
 
         return searchData
     }
-
+    
 }
